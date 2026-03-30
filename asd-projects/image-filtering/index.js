@@ -4,10 +4,6 @@ $(document).ready(function () {
   render($("#display"), image);
   $("#apply").on("click", applyAndRender);
   $("#reset").on("click", resetAndRender);
-  applyFilter(increaseBlueByGreen);
-  applyFilter(decreaseGreen);
-  applyFilterNoBackground(increaseBlueByGreen);
-  applyFilterNoBackground(reddify);
 });
 
 
@@ -27,11 +23,10 @@ function resetAndRender() {
 // all of your apply functions
 function applyAndRender() {
   // Multiple TODOs: Call your apply function(s) here
-
-
- 
-
-
+  applyFilter(increaseBlueByGreen);
+  applyFilter(decreaseGreen);
+  applyFilterNoBackground(increaseBlueByGreen);
+  applyFilterNoBackground(reddify);
   // do not change the below line of code
   render($("#display"), image);
 }
